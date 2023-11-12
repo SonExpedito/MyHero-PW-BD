@@ -66,7 +66,7 @@
                                 $pro = new Livro();
                                 $pro->setcod_livro($_GET['cod_livro']);
                                 echo $pro->exclusao() ."A Tabela Recarregará";
-                                header("Refresh: 1;" );
+                                echo '<script>setTimeout(function() { window.location.href = "ExcluirLivro.php"; }, 1000);</script>';
                                
         
                             }

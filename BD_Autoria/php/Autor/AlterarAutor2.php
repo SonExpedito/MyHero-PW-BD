@@ -17,7 +17,7 @@
                         $p = new Autor();
                         $p ->setcod_autor($idautor);
                         $pro_bd = $p -> alterar();
-                    
+                        $verifi = count($pro_bd);
                     ?>
 
                 
@@ -93,7 +93,14 @@
                                 header("location: AlterarAutor.php" );
         
         
-                            }?>
+                            }
+                            
+                            if ($verifi == 0){
+                                echo 'Não existe nada com esse "ID". <br> Redirecionando automaticamente.';
+                                echo '<script>setTimeout(function() { window.location.href = "AlterarAutor.php"; }, 2000);</script>';
+                            } 
+                            
+                            ?>
                         </p>
                     </div>
 

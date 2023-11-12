@@ -17,7 +17,7 @@
                         $p = new Livro();
                         $p ->setcod_livro($idlivro);
                         $pro_bd = $p -> alterar();
-                    
+                        $verifi = count($pro_bd);
                     ?>
 
                 
@@ -88,6 +88,10 @@
         
                             }
 
+                            if ($verifi == 0){
+                                echo 'Não existe nada com esse "ID". <br> Redirecionando automaticamente.';
+                                echo '<script>setTimeout(function() { window.location.href = "AlterarLivro.php"; }, 2000);</script>';
+                            } 
                     ?>
                         </p>
                     </div>

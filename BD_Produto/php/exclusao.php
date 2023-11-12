@@ -62,7 +62,7 @@
                                 $pro = new Produto();
                                 $pro->setId($_GET['id']);
                                 echo $pro->exclusao() ."A Tabela Recarregará";
-                                header("Refresh: 1;" );
+                                echo '<script>setTimeout(function() { window.location.href = "exclusao.php"; }, 1000);</script>';
         
                             }
 

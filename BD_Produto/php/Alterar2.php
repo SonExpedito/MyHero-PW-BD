@@ -17,7 +17,7 @@
                         $p = new Produto();
                         $p ->setId($txtid);
                         $pro_bd = $p -> alterar();
-                    
+                        $verifi = count($pro_bd);
                     ?>
 
                 
@@ -69,6 +69,11 @@
                                 $pro->alterar2() ;
                                 header("location: Alterar.php" );
                             }
+
+                            if ($verifi == 0){
+                                echo 'Não existe nada com esse "ID". <br> Redirecionando automaticamente.';
+                                echo '<script>setTimeout(function() { window.location.href = "Alterar.php"; }, 2000);</script>';
+                            } 
                             ?>
                         </p>
                     </div>

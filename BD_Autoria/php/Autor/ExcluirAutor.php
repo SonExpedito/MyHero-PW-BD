@@ -68,7 +68,7 @@
                                 $pro = new Autor();
                                 $pro->setcod_autor($_GET['cod_autor']);
                                 echo $pro->exclusao() ."A Tabela Recarregará";
-                                header("Refresh: 1;" );
+                                echo '<script>setTimeout(function() { window.location.href = "ExcluirAutor.php"; }, 1000);</script>';
                                 
         
                             }

@@ -19,6 +19,9 @@
                         $p -> setcod_livro($idlivro);
                         $p ->setcod_autor($idautor);
                         $pro_bd = $p -> alterar();
+                        $verifi = count($pro_bd); 
+        
+                              
                     
                     ?>
 
@@ -79,6 +82,12 @@
                                 header("location: AlterarAutoria.php" );
         
                             }
+
+                            if ($verifi == 0){
+                                echo 'Não existe nada com esses "ID". <br> Redirecionando automaticamente.';
+                                echo '<script>setTimeout(function() { window.location.href = "AlterarAutoria.php"; }, 2000);</script>';
+                            } 
+
                              ?>
                         </p>
                     </div>
