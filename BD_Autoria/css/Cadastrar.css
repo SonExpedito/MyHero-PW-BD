@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&display=swap');
+
+:root{
+    /* ===Colors=== */
+    --body-color: #b3b2ad;
+    --sidebar-color: #FFF;
+    --primary--color: #0f624e;
+    --primary-color-light: #ebe8e8;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+ 
+    /* ====Transition=== */
+    --tran-02: all 0.2s ease ;
+    --tran-03: all 0.3s ease ;
+    --tran-04: all 0.4s ease ;
+    --tran-05: all 0.5s ease ; 
+ 
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Jost
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: url('../img/backgroundcadastrar.png')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: auto;
+    background: var(--primary--color);
+    border: 2px solid rgba(23, 61, 139,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    font-family: Jost;
+    padding: 0;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    font-family: Jost;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    padding-left: 50px;
+    width: 310px;
+   
+    
+}
+.inputbox label{
+    position: absolute;
+    top: 0%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #DDD;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputbox ::placeholder{
+    color: #c7c4c4;
+}
+
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:  50 35px 0 5px;
+    margin-left: -10px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+
+.inputbox i{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes a, .opcoes input{
+    border: none;
+    text-decoration: none;
+    color: var(--primary--color);
+    background: #ebe8e8;
+    font-size: 20px;
+
+    border-radius: 5%;
+    padding: 2px 2px;
+    margin: 0px 10px;
+
+    transition: all 0.1s ease-in;
+}
+
+.opcoes input:active{
+    border: 1px solid  #707070;
+    padding: 0;
+    margin: 0;
+}
+
+.Status p{
+    padding-top: 10px;
+    font-weight: bolder;
+}

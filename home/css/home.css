@@ -1,0 +1,99 @@
+:root{
+    /* ===Colors=== */
+    --body-color: #b3b2ad;
+    --sidebar-color: #FFF;
+    --primary--color: #0f624e;
+    --primary-color-light: #ebe8e8;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+ 
+    /* ====Transition=== */
+    --tran-02: all 0.2s ease ;
+    --tran-03: all 0.3s ease ;
+    --tran-04: all 0.4s ease ;
+    --tran-05: all 0.5s ease ; 
+ 
+ }
+
+body.dark{
+    --body-color: #27292a;
+   --sidebar-color: #252525;
+   --primary--color: #0f624e;
+   --primary-color-light: #232324;
+   --toggle-color: #DDD;
+   --text-color: #707070;
+}
+
+
+
+.home{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: var(--tran-05);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.texto-inicial{
+    text-align: center;
+    justify-content: center;
+}
+
+.texto-inicial h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.texto-inicial h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.texto-inicial p{
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+}
+
+.back-video{
+    align-items: center;
+    position: absolute;
+    width: calc(100%-10px);
+    height: 100vh;
+    left: 120;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+
+@media (min-aspect-radio: 16/9){
+    .back-video{
+       width: auto;
+       height: 100%;
+    }
+
+}
+
+
+@media (max-aspect-radio: 16/9){
+     .back-video{
+        width: auto;
+        height: 100%;
+     }
+
+}

@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Produtos</title>
+        <meta charset="utf-8">
+
+        <link rel="icon" type="image/x-icon" href="img/icone.ico">
+
+        <!---CSS-->
+        <link rel="stylesheet"  href="css/menu.css">
+        <link rel="stylesheet"  href="css/home.css">
+        <link rel="stylesheet" href="css/scrollbar.min.css">
+
+        <!--Boxicons CSS-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    </head>
+
+    <body>
+          <nav class="sidebar close">
+                <header>
+                    <div class="image-text">
+                        <span class="image">
+                            <img src="img/logo.png" alt="logo">
+                        </span>
+
+                        <div class="text header-text">
+                            <span class="title">Menu</span>
+                            <span class="subtitle">Trabalho ETEC</span>
+                        </div>
+
+    
+                    </div>
+
+                    <i class='bx bx-chevron-right toggle'></i>
+                </header>
+             <!--Items navbar-->
+                <div class="menu-bar">
+                    <div class="menu">
+                        <ul class="menu-links">
+                            <li class="nav-links">
+                                <a href="../pesquisa/pesquisar.php">
+                                    <i class='bx bx-search icons'></i>
+                                    <span class="text nav-text">Pesquisar</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-links">
+                                <a href="../home/Index.html">
+                                    <i class='bx bx-home-alt icons'></i>
+                                    <span class="text nav-text">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-links">
+                                <a href="#">
+                                    <i class='bx bx-wallet icons'></i>
+                                    <span class="text nav-text">Produto</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-links">
+                                <a href="../BD_Autoria/Autoria.html">
+                                    <i class='bx bx-book icons'></i>
+                                    <span class="text nav-text">Autoria</span>
+                                </a>
+                            </li>
+
+                            
+
+                            <li class="mode">
+                                 <div class="moon-sun">
+                                        <i class="bx bx-moon icons moon"></i>
+                                        <i class="bx bx-sun icons sun"></i>
+                                 </div>
+                                 <span class="mode-text text">Dark-Light</span>
+
+                                 <div class="toggle-switch">
+                                        <span class="switch"></span>
+                                 </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+           </nav>
+
+          
+
+
+        <section class="home">
+            <div class="card">
+                    <div class="main-box swiper-wrapper">
+                        <div class="content box swiper-slide">
+                            <input type="checkbox" id="check1">
+                            <label for="check1" class="box">
+                                <div class="activation">Criar</div>
+                                <div class="cancel">Cancelar</div>
+                            </label>
+                            <div class="image-box">
+                                <img src="img/card1.jpg">
+                                <div class="about">
+                                    <div class="details">
+                                        <div class="name">Utilizado para Criar</div>
+                                        <a href="php/Cadastrar.php"><div class="function">Create</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-box swiper-wrapper">
+                        <div class="content box swiper-slide">
+                            <input type="checkbox" id="check2">
+                            <label for="check2" class="box">
+                                <div class="activation">Listar</div>
+                                <div class="cancel">Cancelar</div>
+                            </label>
+                            <div class="image-box">
+                                <img src="img/card2.jpg">
+                                <div class="about">
+                                    <div class="details">
+                                        <div class="name">Utilizado para Ler</div>
+                                        <a href="php/Listar.php"><div class="function">Read</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="main-box swiper-wrapper">
+                        <div class="content box swiper-slide">
+                            <input type="checkbox" id="check3">
+                            <label for="check3" class="box">
+                                <div class="activation">Atualizar</div>
+                                <div class="cancel">Cancelar</div>
+                            </label>
+                            <div class="image-box">
+                                <img src="img/card3.jpg">
+                                <div class="about">
+                                    <div class="details">
+                                        <div class="name">Utilizado para Atualizar</div>
+                                        <a href="php/Alterar.php"><div class="function">Update</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-box swiper-wrapper">
+                        <div class="content box swiper-slide">
+                            <input type="checkbox" id="check4">
+                            <label for="check4" class="box">
+                                <div class="activation">Deletar</div>
+                                <div class="cancel">Cancelar</div>
+                            </label>
+                            <div class="image-box">
+                                <img src="img/card4.jpg">
+                                <div class="about">
+                                    <div class="details">
+                                        <div class="name">Utilizado para Deletar</div>
+                                        <a href="php/exclusao.php"><div class="function">Delete</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+
+                </div>
+                
+                
+            </div>
+        
+               
+            
+                
+         </section>
+         <div class="textos">
+                <h1>Banco de Dados</h1>
+                <h2>Produtos</h2>
+        </div>
+
+    </body>
+
+    <script src="javascript/menuzinho.js"></script>
+    <script src="javascript/swiper-bundle.min.js"></script>
+</html>
