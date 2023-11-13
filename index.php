@@ -18,6 +18,16 @@
                 return false;
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var limparButton = document.querySelector('input[name="limpar"]');
+        var statusDiv = document.getElementById('statusDiv');
+
+        limparButton.addEventListener('click', function() {
+            statusDiv.innerHTML = ''; // Limpa o conteúdo da div
+        });
+    });
+
     </script>
 </head>
 
@@ -48,7 +58,7 @@
                         <input type="submit" name="btnconsultar" value="Consultar">
                         <input type="reset" name="limpar" value="Limpar">
                     </div>
-                    <div class="Status">
+                    <div class="Status" id="statusDiv">
                         <p>
                             <?php
                             extract($_POST, EXTR_OVERWRITE);
@@ -76,8 +86,6 @@
                                 }
 
                             }
-
-
 
                             ?>
 
