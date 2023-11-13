@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/05/2023 às 02:27
--- Versão do servidor: 10.4.27-MariaDB
--- Versão do PHP: 8.2.0
+-- Tempo de geração: 13/11/2023 às 01:33
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,9 +20,11 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `exemplocurso`
 --
+
+-- --------------------------------------------------------
+
 create database `exemplocurso`;
 use `exemplocurso`;
--- --------------------------------------------------------
 
 --
 -- Estrutura para tabela `produto`
@@ -40,10 +42,29 @@ CREATE TABLE `produto` (
 
 INSERT INTO `produto` (`id`, `nome`, `estoque`) VALUES
 (1, 'Mouse Cobra Redragon', 20),
-(2, 'Teclado Mecânico Razer', 10),
+(2, 'Teclado Mecânico Razer', 12),
 (3, 'R5 5600G', 5),
 (4, 'Memória Ram 8GB', 8),
 (5, 'RTX 4090', 12);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `Nome` varchar(5) NOT NULL,
+  `Senha` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`Nome`, `Senha`) VALUES
+('Alex', 123),
+('Bruno', 456);
 
 --
 -- Índices para tabelas despejadas
