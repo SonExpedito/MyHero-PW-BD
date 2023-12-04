@@ -21,37 +21,37 @@
                     <div class="inputbox">
                         <i class='bx bxs-discount'></i>
                         <input name="txtcode" type="text" size="5" maxlength="5" placeholder="Cod_Autor"
-                            onkeypress="return blockletras(window.event.keyCode)">
+                            onkeypress="return blockletras(window.event.keyCode)" required>
                         <label for="">Código Autor</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bx-book'></i>
-                        <input name="txtnome" type="text" size="50" maxlength="50" placeholder="Nome-Autor">
+                        <input name="txtnome" type="text" size="50" maxlength="50" placeholder="Nome-Autor" required>
                         <label for="">Nome</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bx-book'></i>
                         <input name="txtsobrenome" type="text" size="50" maxlength="50"
-                            placeholder="Sobrenome do Autor">
+                            placeholder="Sobrenome do Autor" required>
                         <label for="">Sobrenome</label>
                     </div>
 
                     <div class="inputbox">
-                        <input name="datanasc" type="date" placeholder="10/10/1945">
+                        <input name="datanasc" type="date" placeholder="10/10/1945" required>
                         <label for="">Data-Nascimento</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bxs-flag-alt'></i>
-                        <input name="txtnacionalidade" type="text" size="40" maxlength="40" placeholder="Nacionalidade">
+                        <input name="txtnacionalidade" type="text" size="40" maxlength="40" placeholder="Nacionalidade" required>
                         <label for="">Nacionalidade</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bxs-envelope'></i>
-                        <input name="txtEmail" type="Email" size="50" maxlength="50" placeholder="thomastur@gmail.com">
+                        <input name="txtEmail" type="Email" size="50" maxlength="50" placeholder="thomastur@gmail.com" required>
                         <label for="">Email</label>
                     </div>
 

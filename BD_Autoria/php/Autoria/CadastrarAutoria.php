@@ -21,25 +21,25 @@
                     <div class="inputbox">
                         <i class='bx bxs-discount'></i>
                         <input name="txtcodeautor" type="text" size="11" maxlength="11" placeholder="Cod_Autor"
-                            onkeypress="return blockletras(window.event.keyCode)">
+                            onkeypress="return blockletras(window.event.keyCode)" required>
                         <label for="">Código Autor</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bx-book'></i>
                         <input name="txtcodelivro" type="text" size="11" maxlength="11" placeholder="Cod-Livro"
-                            onkeypress="return blockletras(window.event.keyCode)">
+                            onkeypress="return blockletras(window.event.keyCode)" required>
                         <label for="">Código Livro</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bx-book'></i>
-                        <input name="txteditora" type="text" size="50" maxlength="50" placeholder="Panini">
+                        <input name="txteditora" type="text" size="50" maxlength="50" placeholder="Panini" required>
                         <label for="">Editora</label>
                     </div>
 
                     <div class="inputbox">
-                        <input name="datalanc" type="date" placeholder="10/10/1945">
+                        <input name="datalanc" type="date" placeholder="10/10/1945" required>
                         <label for="">Data-Lançamento</label>
                     </div>
 

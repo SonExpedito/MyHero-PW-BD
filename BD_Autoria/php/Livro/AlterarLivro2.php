@@ -50,7 +50,8 @@
 
                         <div class="inputbox">
                             <i class='bx bxs-discount'></i>
-                            <input name="Isbn" type="text" size="17" value='<?php echo $pro_mostrar[2] ?>' maxlength="17">
+                            <input name="Isbn" type="text" size="17" value='<?php echo $pro_mostrar[2] ?>' maxlength="17"
+                                onkeypress="return blockletras(window.event.keyCode)">
                             <label for="">ISBN</label>
                         </div>
 

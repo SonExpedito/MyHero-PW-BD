@@ -21,31 +21,33 @@
                     <div class="inputbox">
                         <i class='bx bxs-discount'></i>
                         <input name="txtcode" type="text" size="5" maxlength="5" placeholder="Cod_Livro"
-                            onkeypress="return blockletras(window.event.keyCode)">
+                            onkeypress="return blockletras(window.event.keyCode)" required>
                         <label for="">Código Livro</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bx-book'></i>
-                        <input name="txttitulo" type="text" size="30" maxlength="30" placeholder="TituloLivro">
+                        <input name="txttitulo" type="text" size="30" maxlength="30" placeholder="TituloLivro" required>
                         <label for="">Titulo Livro</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bx-book'></i>
-                        <input name="Isbn" type="text" size="17" maxlength="17" placeholder="ISBN">
+                        <input name="Isbn" type="text" size="17" maxlength="17" placeholder="ISBN"
+                            onkeypress="return blockletras(window.event.keyCode)" required>
                         <label for="">ISBN</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bxs-flag-alt'></i>
-                        <input name="txtcategoria" type="text" size="30" maxlength="30" placeholder="Categoria">
+                        <input name="txtcategoria" type="text" size="30" maxlength="30" placeholder="Categoria"
+                            required>
                         <label for="">Categoria</label>
                     </div>
 
                     <div class="inputbox">
                         <i class='bx bxs-flag-alt'></i>
-                        <input name="txtidioma" type="text" size="30" maxlength="30" placeholder="Idioma">
+                        <input name="txtidioma" type="text" size="30" maxlength="30" placeholder="Idioma" required>
                         <label for="">Idioma</label>
                     </div>
 

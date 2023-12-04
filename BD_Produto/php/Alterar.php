@@ -7,49 +7,20 @@
     <link rel="stylesheet" href="../css/alterar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <script language=javascript>
-        function blockletras(keypress) {
+    <script src="../javascript/tratamentoerro.js"> </script>
 
-            if (keypress >= 48 && keypress <= 57) {
-                return true;
-
-            }
-            else {
-                return false;
-            }
-        };
-
-        function MascaraTelefone(keypress) {
-            if (keypress >= 48 && keypress <= 57) {
-                separador1 = '(';
-                separador2 - ')';
-                separador3 = '-';
-                conjunto1 = 0;
-                conjunto2 = 3;
-                conjunto3 = 9;
-                if (eval(document.alterar.telefone.value.length) == conjunto1) {
-                    document.alterar.telefone.value = document.alterar.telefone.value + separador1;
+    <script> document.addEventListener('DOMContentLoaded', function () {
+            // Adiciona um ouvinte de evento para o formulário
+            document.querySelector('form').addEventListener('keypress', function (e) {
+                // Verifica se a tecla pressionada é Enter (código 13)
+                if (e.key === 'Enter') {
+                    // Impede o comportamento padrão do Enter (evita que o formulário seja enviado duas vezes)
+                    e.preventDefault();
+                    // Chama a função para enviar o formulário
+                    this.submit();
                 }
-
-                if (eval(document.alterar.telefone.value.length) == conjunto2) {
-                    document.alterar.telefone.value.length = document.alterar.telefone.value.length + separador2;
-
-                }
-
-                if (eval(document.alterar.telefone.value.length) == conjunto2) {
-                    document.alterar.telefone.value.length = document.alterar.telefone.value.length + separador2;
-
-                }
-
-                return true;
-
-            }
-            else {
-                return false;
-            }
-        }
-
-    </script>
+            });
+        }); </script>
 
 </head>
 

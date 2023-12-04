@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="../../css/alterar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../../javascript/tratamentoerro.js"> </script>
+    <script> document.addEventListener('DOMContentLoaded', function () {
+            // Adiciona um ouvinte de evento para o formulário
+            document.querySelector('form').addEventListener('keypress', function (e) {
+                // Verifica se a tecla pressionada é Enter (código 13)
+                if (e.key === 'Enter') {
+                    // Impede o comportamento padrão do Enter (evita que o formulário seja enviado duas vezes)
+                    e.preventDefault();
+                    // Chama a função para enviar o formulário
+                    this.submit();
+                }
+            });
+        }); </script>
 </head>
 
 <body>
