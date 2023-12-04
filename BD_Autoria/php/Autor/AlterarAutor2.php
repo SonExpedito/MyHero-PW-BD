@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Atualizar2</title>
-    <link rel="stylesheet" href="../../css/Cadastrar.css">
+    <link rel="stylesheet" href="../../css/alterar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../../javascript/tratamentoerro.js"> </script>
 </head>
 
 <body>
@@ -42,7 +43,8 @@
 
                         <div class="inputbox">
                             <i class='bx bx-book'></i>
-                            <input name="txtnome" type="text" size="50" value='<?php echo $pro_mostrar[1] ?>' maxlength="50">
+                            <input name="txtnome" type="text" size="50" value='<?php echo $pro_mostrar[1] ?>'
+                                maxlength="50">
                             <label for="">Nome-Autor</label>
                         </div>
 
@@ -68,7 +70,7 @@
 
                         <div class="inputbox">
                             <i class='bx bxs-discount'></i>
-                            <input name="emailtxt" type="text" size="50" value='<?php echo $pro_mostrar[5] ?>'
+                            <input name="emailtxt" type="email" size="50" value='<?php echo $pro_mostrar[5] ?>'
                                 maxlength="50">
                             <label for="">Email-Autor</label>
                         </div>

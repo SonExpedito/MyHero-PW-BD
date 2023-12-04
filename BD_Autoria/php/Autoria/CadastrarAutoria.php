@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cadastrar</title>
-        <link rel="stylesheet"  href="../../css/Cadastrar.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="../../css/Cadastrar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../../javascript/tratamentoerro.js"> </script>
+</head>
+
+<body>
 
     <section>
         <div class="form-box">
@@ -16,14 +19,16 @@
                     <h2>Insira os Dados </h2>
 
                     <div class="inputbox">
-                        <i class='bx bxs-discount' ></i>                      
-                        <input name="txtcodeautor" type="text" size="11" maxlength="11" placeholder="Cod_Autor">
+                        <i class='bx bxs-discount'></i>
+                        <input name="txtcodeautor" type="text" size="11" maxlength="11" placeholder="Cod_Autor"
+                            onkeypress="return blockletras(window.event.keyCode)">
                         <label for="">Código Autor</label>
                     </div>
 
                     <div class="inputbox">
-                    <i class='bx bx-book'></i>
-                        <input name="txtcodelivro" type="text" size="11" maxlength="11" placeholder="Cod-Livro">
+                        <i class='bx bx-book'></i>
+                        <input name="txtcodelivro" type="text" size="11" maxlength="11" placeholder="Cod-Livro"
+                            onkeypress="return blockletras(window.event.keyCode)">
                         <label for="">Código Livro</label>
                     </div>
 
@@ -34,7 +39,7 @@
                     </div>
 
                     <div class="inputbox">
-                        <input name="datalanc" type="date"  placeholder="10/10/1945">
+                        <input name="datalanc" type="date" placeholder="10/10/1945">
                         <label for="">Data-Lançamento</label>
                     </div>
 
@@ -46,23 +51,23 @@
                         <a href="../../Autoria.html">Voltar</a>
                     </div>
                     <div class="Status">
-                        <p><?php
-                            extract ($_POST, EXTR_OVERWRITE);
-                            if(isset($btnenviar))
-                            {
+                        <p>
+                            <?php
+                            extract($_POST, EXTR_OVERWRITE);
+                            if (isset($btnenviar)) {
                                 include_once 'Autoria.php';
                                 $pro = new Autoria();
                                 $pro->setcod_autor($txtcodeautor);
                                 $pro->setcod_livro($txtcodelivro);
                                 $pro->seteditora($txteditora);
                                 $pro->setlancamento($datalanc);
-                                echo "Status:" . $pro->salvar() ;
-        
-        
+                                echo "Status:" . $pro->salvar();
+
+
                             }
 
-                ?>
-                </p>
+                            ?>
+                        </p>
                     </div>
 
                 </form>
@@ -70,7 +75,8 @@
             </div>
         </div>
 
-       
+
     </section>
-    </body>
+</body>
+
 </html>

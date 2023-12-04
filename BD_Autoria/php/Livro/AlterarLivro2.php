@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Atualizar2</title>
-    <link rel="stylesheet" href="../../css/Cadastrar.css">
+    <link rel="stylesheet" href="../../css/alterar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../../javascript/tratamentoerro.js"> </script>
 </head>
 
 <body>
